@@ -1,1 +1,1 @@
-With this app, we can make changes to our text such as removing numbers, removing punctuations and so on!
+Make changes to the input text such as removing numbers, removing punctuations, changing to uppercase and so on!
