@@ -11,7 +11,6 @@ def analyze(request):
     removepuncs = request.POST.get('removepuncs')
     removenumbers = request.POST.get('removenumbers')
     fullcaps = request.POST.get('fullcaps')
-    alllower = request.POST.get('alllower')
     charcount = request.POST.get('charcount')
 
     context = {
@@ -50,14 +49,6 @@ def analyze(request):
             result = ''
             result = text.upper()
             context['purpose'].append('Changed to Uppercase')
-            context['result'] = result
-            context['info'] = 'Your text has been analyzed!'
-            text = result
-
-        if alllower:
-            result = ''
-            result = text.lower()
-            context['purpose'].append('Changed to lowercase')
             context['result'] = result
             context['info'] = 'Your text has been analyzed!'
             text = result
